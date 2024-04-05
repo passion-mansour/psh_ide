@@ -24,6 +24,7 @@ function App() {
       */}
       <h1>테스트 에디터 작업</h1>
       <CodeEditor />
+      <p>나중에 에디터는 useContext로 바꿀 생각 props 넘기는게 많아지면 번거롭기 때문</p>
     </div>
   );
 }
