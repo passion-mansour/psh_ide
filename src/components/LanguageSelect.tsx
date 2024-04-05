@@ -1,6 +1,7 @@
 const LanguageSelect = ({ codeLanguage, setCodeLanguage } : { codeLanguage: any, setCodeLanguage: any }) => {
     const languages = ['javascript', 'c', 'java', 'python'];
 
+
     const handlerChange = (e: any) => {
         setCodeLanguage(e.target.value);
     }
@@ -9,7 +10,7 @@ const LanguageSelect = ({ codeLanguage, setCodeLanguage } : { codeLanguage: any,
         <select onChange={ handlerChange }>
             { languages.map( (language) => {
                 return (
-                    <option value={language}> { language } </option>
+                    <option value={language} selected={ language === 'javascript' }> { language } </option>
                 )
             }) }
         </select>
